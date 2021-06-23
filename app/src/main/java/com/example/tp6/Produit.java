@@ -28,7 +28,9 @@ public class Produit {
     public String getDesignation() {
         return designation;
     }
-    public void setDesignation(String designation) { this.designation = designation; } public double getPrixUnitaire() { return prixUnitaire; } public void setPrixUnitaire(double prixUnitaire) { this.prixUnitaire = prixUnitaire; } @Override
-
+    public void setDesignation(String designation) { this.designation = designation; }
+    public double getPrixUnitaire() { return prixUnitaire; }
+    public void setPrixUnitaire(double prixUnitaire) { this.prixUnitaire = prixUnitaire; }
+    @Override
     public String toString() { return "code=" + code + ", designation='" + designation + '\'' + ", prixUnitaire=" + prixUnitaire + '\n'; }
 }

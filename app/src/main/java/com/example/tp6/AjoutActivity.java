@@ -33,8 +33,11 @@ public class AjoutActivity extends AppCompatActivity {
         int code=Integer.parseInt(etCode.getText().toString());
         String des=etDestignation.getText().toString();
         Double pu=Double.parseDouble(etPUc.getText().toString());
-        Produit pr=new Produit(); pr.setCode(code); pr.setDesignation(des);
-        pr.setPrixUnitaire(pu); MainActivity.db.produitDao().AjouterProdui(pr);
+        Produit pr=new Produit();
+        pr.setCode(code);
+        pr.setDesignation(des);
+        pr.setPrixUnitaire(pu);
+        MainActivity.db.produitDao().AjouterProdui(pr);
         etCode.setText("");
         etPUc.setText("");
         etDestignation.setText("");

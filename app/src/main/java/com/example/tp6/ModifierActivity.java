@@ -53,7 +53,8 @@ public class ModifierActivity extends AppCompatActivity {
         }
         code=Integer.parseInt(etCode.getText().toString());
         Produit pr= MainActivity.db.produitDao().getProduitByCode(code);
-        if(pr!=null){ etDestignation.setText(pr.getDesignation());
+        if(pr!=null){
+            etDestignation.setText(pr.getDesignation());
         etPUc.setText(String.valueOf(pr.getPrixUnitaire()));
         }
         else

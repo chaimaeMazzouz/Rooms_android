@@ -16,6 +16,8 @@ public interface ProduitDAO {
     public void ModifierProduit(Produit p);
     @Delete
     public void SupprimerProduit(Produit p);
-    @Query("select * from Produit") public List<Produit> getProduits();
-    @Query("select * from Produit where code=:id") public Produit getProduitByCode(int id);
+    @Query("select * from Produit")
+    public List<Produit> getProduits();
+    @Query("select * from Produit where code=:id")
+    public Produit getProduitByCode(int id);
 }

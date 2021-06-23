@@ -29,7 +29,8 @@ public class SupprimerActivity extends AppCompatActivity {
         pr.setCode(code);
         Produit p=MainActivity.db.produitDao().getProduitByCode(code);
 
-        if(p==null) { Toast.makeText(this,"Produit introuvable",Toast.LENGTH_LONG).show();
+        if(p==null) {
+            Toast.makeText(this,"Produit introuvable",Toast.LENGTH_LONG).show();
         return;
         }
         MainActivity.db.produitDao().SupprimerProduit(pr);

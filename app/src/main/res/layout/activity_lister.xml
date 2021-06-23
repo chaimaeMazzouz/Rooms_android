@@ -8,5 +8,11 @@
     android:padding="15dp"
     android:orientation="vertical">
 
+    <ListView
+        android:id="@+id/liste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="3dp"
+        android:divider="#398"/>
 
 </LinearLayout>
