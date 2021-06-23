@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".AjoutActivity">
+   <EditText
+       android:id="@+id/NumP"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:textSize="15sp"
+       android:hint="Num produit"
+       android:inputType="number"/>
+    <EditText
+        android:id="@+id/Des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="Designation"/>
+    <EditText
+        android:id="@+id/PrixU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="Prix Unitaire"
+        android:inputType="numberDecimal"/>
+    <Button
+        android:id="@+id/Ajout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter produit"
+        android:layout_marginTop="20dp"
+        android:onClick="Ajouter_Produit"/>
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

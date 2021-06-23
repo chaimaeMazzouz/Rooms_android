@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".SupprimerActivity">
+    <EditText
+        android:id="@+id/NumP_Sup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:hint="Num produit"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/Supprimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Supprimer"
+        android:layout_marginTop="20dp"
+        android:onClick="Supprimer_Produit"/>
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_marginTop="20dp"
+        android:onClick="Menu_back"/>
+</LinearLayout>
